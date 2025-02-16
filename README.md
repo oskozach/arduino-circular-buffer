@@ -1,3 +1,3 @@
-# Arduno | Circular Buffer
+# Circular Buffer
 
-Generic circular buffer that supports insertion, clearing, averaging, and retrieving the last value. It is designed for Arduino applications.
+This generic circular buffer allows selecting the data type and size, supports value insertion, clearing, averaging, and retrieving the last stored value. It is designed for Arduino applications.
