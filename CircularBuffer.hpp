@@ -1,5 +1,5 @@
-#ifndef __CIRCULAR_BUFFER_H__
-#define __CIRCULAR_BUFFER_H__
+#ifndef __CIRCULAR_BUFFER_HPP__
+#define __CIRCULAR_BUFFER_HPP__
 
 template<typename T, size_t N>
 class CircularBuffer {
@@ -7,9 +7,7 @@ class CircularBuffer {
         size_t _writeIndex;
         bool _allValuesSetted;
         T _data[N];
-        size_t _getCount() {
-            return (_allValuesSetted) ? N : _writeIndex;
-        }
+        size_t _getCount() { return (_allValuesSetted) ? N : _writeIndex; }
         size_t _getLastIndex() {
             if(isEmpty())
                 return 0;
